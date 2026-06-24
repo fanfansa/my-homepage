@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人主页</title>
+<style>
+  :root {
+    --bg: #fff;
+    --text: #1a1a1a;
+    --muted: #666;
+    --accent: #000;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+  /* Navigation */
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 24px 0; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px); z-index: 100;
+    margin-bottom: 60px;
+  }
+  .logo { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { font-size: 14px; color: var(--muted); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* Hero */
+  .hero { padding: 40px 0 80px; }
+  .hero h1 { font-size: 48px; font-weight: 800; letter-spacing: -2px; line-height: 1.1; margin-bottom: 16px; }
+  .hero .subtitle { font-size: 18px; color: var(--muted); max-width: 520px; }
+  .hero .cta { display: inline-block; margin-top: 32px; padding: 12px 28px; background: var(--accent); color: #fff; border-radius: 8px; font-size: 14px; font-weight: 600; transition: opacity 0.2s; }
+  .hero .cta:hover { opacity: 0.85; }
+
+  /* Sections */
+  section { padding: 60px 0; border-top: 1px solid var(--border); }
+  section h2 { font-size: 24px; font-weight: 700; margin-bottom: 28px; letter-spacing: -0.5px; }
+
+  /* About */
+  .about-content { display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap; }
+  .avatar {
+    width: 120px; height: 120px; border-radius: 50%; background: var(--accent);
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 48px; font-weight: 300;
+  }
+  .about-text { flex: 1; min-width: 260px; }
+  .about-text p { color: var(--muted); margin-bottom: 12px; }
+
+  /* Skills */
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .skill-tag {
+    padding: 8px 18px; border: 1px solid var(--border); border-radius: 20px;
+    font-size: 13px; color: var(--text); transition: all 0.2s;
+  }
+  .skill-tag:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  /* Projects */
+  .project-card {
+    border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;
+    margin-bottom: 20px; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .project-card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+  .project-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .project-card .desc { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+  .project-card .tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .project-card .tag { font-size: 12px; color: var(--muted); padding: 3px 10px; background: var(--card-bg); border-radius: 12px; }
+
+  /* Contact */
+  .contact-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .contact-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+  .contact-item a { border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  .contact-item a:hover { border-bottom-color: var(--accent); }
+
+  /* Footer */
+  footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 32px; letter-spacing: -1px; }
+    .hero .subtitle { font-size: 15px; }
+    .nav-links { gap: 16px; }
+    .about-content { flex-direction: column; align-items: center; text-align: center; }
+    .avatar { width: 96px; height: 96px; font-size: 36px; }
+    section { padding: 40px 0; }
+    .project-card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <nav>
+    <div class="logo">Name</div>
+    <ul class="nav-links">
+      <li><a href="#about">关于</a></li>
+      <li><a href="#skills">技能</a></li>
+      <li><a href="#projects">项目</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>你好，<br>我是 [你的名字]</h1>
+    <p class="subtitle">全栈开发者 / 设计师，专注于构建简洁高效的数字产品。热爱开源，乐于分享。</p>
+    <a href="#contact" class="cta">联系我</a>
+  </header>
+
+  <section id="about">
+    <h2>关于我</h2>
+    <div class="about-content">
+      <div class="avatar">N</div>
+      <div class="about-text">
+        <p>拥有 X 年互联网产品开发经验，曾就职于多家科技公司，参与过多款百万级用户产品的设计与研发。</p>
+        <p>目前专注于前端工程化、用户体验设计和 AI 辅助开发方向。工作之余喜欢摄影、阅读和探索新技术。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>技能</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">JavaScript / TypeScript</span>
+      <span class="skill-tag">React / Next.js</span>
+      <span class="skill-tag">Vue / Nuxt</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">Docker</span>
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Tailwind CSS</span>
+      <span class="skill-tag">Git</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>项目</h2>
+
+    <div class="project-card">
+      <h3>项目名称 A</h3>
+      <p class="desc">一个高性能的实时协作工具，支持多人同时编辑，基于 WebSocket 和 CRDT 算法。</p>
+      <div class="tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">WebSocket</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>项目名称 B</h3>
+      <p class="desc">面向开发者的 API 文档管理平台，支持自动生成、版本管理和团队协作。</p>
+      <div class="tags">
+        <span class="tag">Vue</span>
+        <span class="tag">Python</span>
+        <span class="tag">PostgreSQL</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>开源贡献</h3>
+      <p class="desc">积极参与开源社区，为多个知名项目贡献代码和文档，GitHub 累计获得 X Stars。</p>
+      <div class="tags">
+        <span class="tag">Open Source</span>
+        <span class="tag">Community</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系方式</h2>
+    <div class="contact-links">
+      <div class="contact-item">邮箱 <a href="mailto:hello@example.com">hello@example.com</a></div>
+      <div class="contact-item">GitHub <a href="https://github.com">github.com/yourname</a></div>
+      <div class="contact-item">微信 your_wechat</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 [你的名字]. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
