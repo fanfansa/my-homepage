@@ -351,63 +351,63 @@ main{
 
 <script>
 const ultramen = [
-  {name:"初代奥特曼",year:1966,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/9/94/Ultraman_Info.png/revision/latest?cb=20191228011444",desc:"来自M78星云的光之巨人，与早田进一心同体，用斯派修姆光线守护地球。奥特曼系列的起点。",tags:["斯派修姆光线", "光之国元祖", "奥特兄弟"]},
-  {name:"佐菲",year:1966,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/7/75/Ultraman_Z0ffy_by_zer0stylinx.png/revision/latest?cb=20240529062609",desc:"宇宙警备队队长，奥特兄弟的大哥。胸前佩戴星之勋章，M87光线威力无匹。",tags:["M87光线", "宇宙警备队队长", "星之勋章"]},
-  {name:"赛文",year:1967,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/3/39/Ultraseven_awsome.png/revision/latest?cb=20210919005819",desc:"340号恒星观测员，头镖可远程攻击。以诸星团身份融入人类社会，赛罗之父。",tags:["头镖", "艾梅利姆光线", "赛罗之父"]},
-  {name:"杰克",year:1971,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/9/98/Ultraman_Jack_data.png/revision/latest?cb=20180603040258",desc:"带着奥特手镯回归的战士。与乡秀树融合，手镯可变身多种武器，击败无数强敌。",tags:["奥特手镯", "流星飞踢", "武器多变"]},
-  {name:"艾斯",year:1972,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/9/9e/Ultraman_Ace.png/revision/latest?cb=20230822161519",desc:"光线技之王，由北斗星司与南夕子二人合体变身。拥有多种切割光线和梅塔利姆光线。",tags:["梅塔利姆光线", "合体变身", "光线之王"]},
-  {name:"奥特之父",year:1972,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/f/fa/Father_Infobox.png/revision/latest?cb=20230530120131",desc:"宇宙警备队最高司令官，泰罗之父。头戴大角，实力深不可测，曾封印宙达。",tags:["宇宙警备队创始人", "大角", "泰罗之父"]},
-  {name:"泰罗",year:1973,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/3/39/Taro_Info.png/revision/latest?cb=20200217011355",desc:"奥特之父与奥特之母的独子。拥有奥特心脏和斯特利姆光线，热情勇敢的太子。",tags:["斯特利姆光线", "奥特心脏", "太子"]},
-  {name:"奥特之母",year:1973,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/e/e3/Mother_Infobox.png/revision/latest?cb=20210329175751",desc:"银十字军队长，泰罗之母。擅长治愈光线，温柔慈爱，多次救回重伤战士。",tags:["治愈光线", "银十字军", "母爱"]},
-  {name:"雷欧",year:1974,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/7/70/Ultraman_Leo.png/revision/latest?cb=20230807213705",desc:"L77星王子，格斗之王。故乡毁灭后流落地球，以雷欧飞踢闻名，赛罗的师父。",tags:["雷欧飞踢", "格斗大师", "L77星"]},
-  {name:"阿斯特拉",year:1974,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/1/10/Astra_movie_II.png/revision/latest?cb=20210919010839",desc:"雷欧的双胞胎弟弟。左腿有岩浆锁链印记，与哥哥并肩作战，兄弟合体技威力惊人。",tags:["岩浆锁链", "双胞胎", "兄弟合体技"]},
-  {name:"奥特之王",year:1974,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/1/1c/King_Data.png/revision/latest?cb=20200512050229",desc:"传说中的超人，独自居住于国王星。拥有修复宇宙的伟力，在关键时刻现身。",tags:["国王星", "宇宙修复", "传说级"]},
-  {name:"乔尼亚斯",year:1979,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/3/36/Joe_data.png/revision/latest?cb=20230508010047",desc:"U40星最强战士，首位动画奥特曼。体型健硕，普兰尼姆光线贯穿力极强。",tags:["U40星", "动画版", "普兰尼姆光线"]},
-  {name:"爱迪",year:1980,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/1/10/Ultraman_80.png/revision/latest?cb=20210919010646",desc:"全能型战士，兼任中学教师。拥有丰富光线技与医疗能力，与尤莉安青梅竹马。",tags:["全能型", "教师", "医疗光线"]},
-  {name:"尤莉安",year:1980,era:"showa",img:"https://static.wikia.nocookie.net/ultra/images/d/d8/Yullian_Infobox.png/revision/latest?cb=20191225190408",desc:"光之国公主，首位女奥特战士。与爱迪并肩作战，温柔而勇敢。",tags:["光之国公主", "女战士", "爱迪"]},
-  {name:"葛雷",year:1990,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/9/91/Ultraman_Great.png/revision/latest?cb=20191223222951",desc:"澳大利亚版奥特曼，名字源自大堡礁。三角计时器独特设计，等离子燃烧光线威力强大。",tags:["澳大利亚", "三角计时器", "等离子燃烧"]},
-  {name:"帕瓦特",year:1993,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/6/6a/Ultraman_Powered.png/revision/latest?cb=20191224205306",desc:"美版奥特曼，肌肉线条分明。愤怒时眼睛由蓝变红，美籍亚裔人间体。",tags:["美版", "肌肉强化", "蓝色眼眸"]},
-  {name:"哉阿斯",year:1996,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/2/24/Ultraman%E2%98%86Zearth.png/revision/latest?cb=20191224225529",desc:"洁癖奥特曼，用牙刷变身。红色形态战斗力惊人，从怯战到勇敢成长的独特故事。",tags:["洁癖", "牙刷变身", "红色强化"]},
-  {name:"迪迦",year:1996,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/3/38/UltramanTiga.png/revision/latest?cb=20220104172825",desc:"平成三杰之首，超古代战士。三形态切换（复合/强力/空中），在中国人气极高。",tags:["三形态", "超古代", "哉佩利敖光线", "平成三杰"]},
-  {name:"戴拿",year:1997,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/2/2f/Dyna_profile_I.png/revision/latest?cb=20200428192426",desc:"平成三杰之一，闪亮/强力/奇迹三形态。飞鸟信变身，继承了迪迦的光。",tags:["三形态", "飞鸟信", "平成三杰"]},
-  {name:"盖亚",year:1998,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/6/65/Ultraman_Gaia.png/revision/latest?cb=20190926164202",desc:"大地之光，平成三杰之一。高山我梦变身，V2/SV多重升级形态。",tags:["大地之光", "V2形态", "平成三杰"]},
-  {name:"阿古茹",year:1998,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/1/1e/Ultraman_Agul_V2.png/revision/latest?cb=20190926165410",desc:"海洋之光，全身蓝色。藤宫博也变身，冷酷而理性，盖亚的宿敌与战友。",tags:["海洋之光", "蓝色战士", "V2形态"]},
-  {name:"纳伊斯",year:2000,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/7/7a/Ultraman_Nice_profile.png/revision/latest?cb=20191224210126",desc:"搞笑短片主角，红色计时器为独特方形。以巧克力变身，轻松幽默风格。",tags:["短片", "方形计时器", "搞笑"]},
-  {name:"奈欧斯",year:2000,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/f/f5/Ultraman_Neos.png/revision/latest?cb=20191225215136",desc:"年轻勇敢的警备队员，被称为'奇迹之人'。回归昭和风格的平成战士。",tags:["年轻勇者", "复古风格", "奇迹之人"]},
-  {name:"赛文21",year:2000,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/f/fb/721.png/revision/latest?cb=20191225215537",desc:"21世纪的赛文，奈欧斯的搭档。同样使用头镖，隶属宇宙保安厅。",tags:["头镖", "宇宙保安厅", "奈欧斯搭档"]},
-  {name:"高斯",year:2001,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/4/41/Ultraman_Cosmos.png/revision/latest?cb=20200924152156",desc:"慈爱的战士，主张感化而非消灭怪兽。月神/日冕多种形态，最终与卡欧斯和解。",tags:["感化", "月神形态", "日冕形态", "慈爱"]},
-  {name:"杰斯提斯",year:2002,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/0/00/Justice_Info.png/revision/latest?cb=20191226050041",desc:"正义的使者，与高斯融合为雷杰多。坚信人类值得被拯救。",tags:["正义", "融合素材", "雷杰多"]},
-  {name:"雷杰多",year:2003,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/3/35/Legend_full.png/revision/latest?cb=20191225211237",desc:"传说中的战士，高斯与杰斯提斯融合而成。火花传说一击毁灭一切邪恶，宇宙意志化身。",tags:["合体奥", "火花传说", "宇宙意志"]},
-  {name:"奈克斯特",year:2004,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/0/0c/Nextjunisrender.png/revision/latest?cb=20200518030847",desc:"奈克瑟斯的前身，与真木舜一融合。电影《ULTRAMAN》登场，进化链条的起点。",tags:["进化起点", "电影版", "诺亚前身"]},
-  {name:"奈克瑟斯",year:2004,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/c/c8/Ultraman_Nexus.png/revision/latest?cb=20191226050428",desc:"纽带之光，多名适能者继承。红色/蓝色青年形态，最终进化为诺亚。",tags:["适能者", "纽带", "青年形态", "诺亚"]},
-  {name:"诺亚",year:2004,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/f/f8/Ultraman_Noa_Info.png/revision/latest?cb=20201002040422",desc:"传说中的光之巨人，奈克瑟斯的最终形态。背生诺亚之翼，穿越时空的终极存在。",tags:["诺亚之翼", "终极形态", "传说级"]},
-  {name:"麦克斯",year:2005,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/3/38/Max_Info.png/revision/latest?cb=20191223224355",desc:"'最快最强'的奥特曼，马库修姆光线威力巨大。东马快斗变身，身高可巨大化至999米。",tags:["最快最强", "马库修姆光线", "巨大化"]},
-  {name:"杰诺",year:2005,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/f/ff/Ultraman_Xenon_info.png/revision/latest?cb=20191226050816",desc:"麦克斯的支援者，从光之国送来麦克斯银河。短暂登场却影响深远。",tags:["麦克斯银河", "支援者", "光之国"]},
-  {name:"梦比优斯",year:2006,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/5/5e/Mebius_Info.png/revision/latest?cb=20191117031627",desc:"奥特兄弟最小成员，日比野未来。梦比姆光线+火焰形态，无限梦比优斯融合全兄弟。",tags:["奥特兄弟", "火焰形态", "无限梦比优斯"]},
-  {name:"希卡利",year:2006,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/0/0e/Hikari_Info.png/revision/latest?cb=20191226051216",desc:"光之国科学家，发明骑士气息。从复仇中觉醒，与梦比优斯建立深厚羁绊。",tags:["科学家", "骑士气息", "蓝族"]},
-  {name:"赛罗",year:2009,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/3/33/Zero_profil_I.png/revision/latest?cb=20200720071455",desc:"赛文之子，光之国最强战士！佩戴帕拉吉手镯穿越时空，赛罗双射线横扫一切。",tags:["赛文之子", "帕拉吉手镯", "光辉赛罗", "最强"]},
-  {name:"贝利亚",year:2009,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/2/2c/Ultraman_Belial_infobox.png/revision/latest?cb=20200104204021",desc:"堕入黑暗的奥特战士。曾被雷布朗多星人附身，手持终极格斗仪，光之国最危险的反派。",tags:["黑暗", "雷布朗多", "终极格斗仪", "反派"]},
-  {name:"赛迦",year:2012,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/2/24/Ultraman_Saga1.png/revision/latest?cb=20191226051734",desc:"赛罗+戴拿+高斯三位一体融合。传说中的奇迹战士，赛迦极限拳破灭一切。",tags:["三位一体", "奇迹", "赛迦极限拳"]},
-  {name:"银河",year:2013,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/c/c8/Ultraman_Ginga_full.png/revision/latest?cb=20191117225024",desc:"来自未来的光之巨人。礼堂光用银河火花变身，银河圣剑斩断黑暗。",tags:["未来战士", "银河火花", "银河圣剑"]},
-  {name:"维克特利",year:2014,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/e/ee/Ultraman_Victory_full.png/revision/latest?cb=20191117224934",desc:"地底世界的守护者，维克特利水晶之力。使用怪兽武装的独特战斗方式。",tags:["地下世界", "维克特利水晶", "怪兽武装"]},
-  {name:"艾克斯",year:2015,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/f/f0/Ultraman_X.png/revision/latest?cb=20230731220619",desc:"数据化的光之巨人。与大地融合，通过电子卡片切换多种怪兽装甲形态。",tags:["数据化", "电子卡片", "怪兽装甲"]},
-  {name:"欧布",year:2016,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/0/05/Orb_Origin.png/revision/latest?cb=20180317130742",desc:"流浪的奥特曼，使用奥特融合卡。红凯变身，重光/暴炎/疾风多种形态。",tags:["奥特融合卡", "流浪", "红凯", "多形态"]},
-  {name:"捷德",year:2017,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/3/39/Img_top_chara_02.png/revision/latest?cb=20191217013637",desc:"贝利亚之子，朝仓陆。用捷德升华器融合胶囊变身，证明命运可以超越血统。",tags:["贝利亚之子", "捷德升华器", "命运之子"]},
-  {name:"罗索",year:2018,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/7/70/Ultraman_Rosso.png/revision/latest?cb=20180719120238",desc:"凑活海变身，使用火之水晶。与弟弟布鲁合体为罗布奥特曼。",tags:["火", "兄弟", "罗布合体", "水晶"]},
-  {name:"布鲁",year:2018,era:"heisei",img:"https://static.wikia.nocookie.net/ultra/images/d/df/Ultraman_Blu.png/revision/latest?cb=20180531192204",desc:"凑勇海变身，使用水之水晶。与哥哥罗索并肩作战，兄弟羁绊的化身。",tags:["水", "兄弟", "罗布合体", "水晶"]},
-  {name:"格丽乔",year:2019,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/4/4d/Ultra-woman-grigio.png/revision/latest?cb=20220116162526",desc:"凑朝阳变身的女战士。治愈和辅助为主，拥有格罗布合体的关键力量。",tags:["女战士", "治愈", "格罗布", "妹妹"]},
-  {name:"泰迦",year:2019,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/6/69/Ultraman_Taiga_Info.png/revision/latest?cb=20191127232010",desc:"泰罗之子，令和首位奥特曼。工藤优幸变身，泰迦三重斯特利姆展现惊人成长。",tags:["泰罗之子", "令和首作", "三重斯特利姆"]},
-  {name:"泰塔斯",year:2019,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/4/48/Ultraman_Titas_Info.png/revision/latest?cb=20191225212639",desc:"U40星肌肉战士，乔尼亚斯后辈。力量型战士，与泰迦、风马组成三人小队。",tags:["U40星", "肌肉", "三人小队", "力量"]},
-  {name:"风马",year:2019,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/8/82/Ultraman_Fuma_Info.png/revision/latest?cb=20191225212608",desc:"O-50星忍者战士，以速度著称。三人小队敏捷担当，疾风般的战斗风格。",tags:["O-50星", "忍者", "速度", "三人小队"]},
-  {name:"令迦",year:2020,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/3/33/Reiga_Info.png/revision/latest?cb=20200614022200",desc:"新生代英雄大合体！泰迦三人+格丽乔+银河+维克特利+艾克斯+欧布+捷德+罗索+布鲁。",tags:["大合体", "新生代顶点", "究极"]},
-  {name:"泽塔",year:2020,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/6/6f/Zetto2render.png/revision/latest?cb=20200424165828",desc:"赛罗的徒弟，使用奥特勋章切换形态。获星云赏，阿尔法利刃/贝塔冲击/伽马未来三大形态。",tags:["赛罗徒弟", "奥特勋章", "星云赏", "三形态"]},
-  {name:"特利迦",year:2021,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/0/0e/Trigger_Full.png/revision/latest?cb=20210721014344",desc:"致敬迪迦的令和战士。复合/强力/空中三形态，真中剑悟变身，圆环之臂战斗。",tags:["迪迦致敬", "三形态", "圆环之臂", "微笑"]},
-  {name:"德凯",year:2022,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/6/69/DeckerRender.png/revision/latest?cb=20220331065836",desc:"明日见奏大变身。闪亮/强壮/奇迹三形态，塞尔捷特光线击破强敌。",tags:["三形态", "奏大", "塞尔捷特光线"]},
-  {name:"帝纳斯",year:2023,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/9/9f/Ultraman_Dinas_Info.png/revision/latest?cb=20230305132515",desc:"拉维星女战士，与德凯相似的光之巨人。紫色纹路，第七位女奥特英雄。",tags:["女战士", "拉维星", "紫色", "第七位"]},
-  {name:"雷古洛思",year:2022,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/6/6f/UltramanRegulos.png/revision/latest?cb=20210925031715",desc:"天龙座D60星战士，宇宙幻兽拳大师。师从雷亭大师，白虎赤龙弹震撼登场。",tags:["幻兽拳", "天龙座", "D60", "白虎赤龙弹"]},
-  {name:"布莱泽",year:2023,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/2/20/UltramanBlazar.png/revision/latest?cb=20230421040757",desc:"比留间弦人变身，极具野性的战斗风格。螺旋光矛为标志武器，造型突破传统。",tags:["野性", "螺旋光矛", "比留间弦人", "创新"]},
-  {name:"亚刻",year:2024,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/5/55/Ultraman_Arc_Render.png/revision/latest?cb=20240404223711",desc:"飞世优马变身，释放想象力之力。亚刻最终升华光线，造型源自优马童年画作。",tags:["想象力", "亚刻觉醒器", "飞世优马", "2024"]},
-  {name:"奥美迦",year:2025,era:"reiwa",img:"https://static.wikia.nocookie.net/ultra/images/c/c4/OmegaRender1.png/revision/latest?cb=20250608105447",desc:"大木田宙人变身。奥美迦头镖为变身器与武器，标志性'奥美迦感知'动作，雷迪库琉特光线。",tags:["头镖", "奥美迦星石", "雷迪库琉特光线", "2025"]}
+  {name:"初代奥特曼",year:1966,era:"showa",img:"img/ultra_00.webp",desc:"来自M78星云的光之巨人，与早田进一心同体，用斯派修姆光线守护地球。奥特曼系列的起点。",tags:["斯派修姆光线", "光之国元祖", "奥特兄弟"]},
+  {name:"佐菲",year:1966,era:"showa",img:"img/ultra_01.webp",desc:"宇宙警备队队长，奥特兄弟的大哥。胸前佩戴星之勋章，M87光线威力无匹。",tags:["M87光线", "宇宙警备队队长", "星之勋章"]},
+  {name:"赛文",year:1967,era:"showa",img:"img/ultra_02.webp",desc:"340号恒星观测员，头镖可远程攻击。以诸星团身份融入人类社会，赛罗之父。",tags:["头镖", "艾梅利姆光线", "赛罗之父"]},
+  {name:"杰克",year:1971,era:"showa",img:"img/ultra_03.webp",desc:"带着奥特手镯回归的战士。与乡秀树融合，手镯可变身多种武器，击败无数强敌。",tags:["奥特手镯", "流星飞踢", "武器多变"]},
+  {name:"艾斯",year:1972,era:"showa",img:"img/ultra_04.webp",desc:"光线技之王，由北斗星司与南夕子二人合体变身。拥有多种切割光线和梅塔利姆光线。",tags:["梅塔利姆光线", "合体变身", "光线之王"]},
+  {name:"奥特之父",year:1972,era:"showa",img:"img/ultra_05.webp",desc:"宇宙警备队最高司令官，泰罗之父。头戴大角，实力深不可测，曾封印宙达。",tags:["宇宙警备队创始人", "大角", "泰罗之父"]},
+  {name:"泰罗",year:1973,era:"showa",img:"img/ultra_06.webp",desc:"奥特之父与奥特之母的独子。拥有奥特心脏和斯特利姆光线，热情勇敢的太子。",tags:["斯特利姆光线", "奥特心脏", "太子"]},
+  {name:"奥特之母",year:1973,era:"showa",img:"img/ultra_07.webp",desc:"银十字军队长，泰罗之母。擅长治愈光线，温柔慈爱，多次救回重伤战士。",tags:["治愈光线", "银十字军", "母爱"]},
+  {name:"雷欧",year:1974,era:"showa",img:"img/ultra_08.webp",desc:"L77星王子，格斗之王。故乡毁灭后流落地球，以雷欧飞踢闻名，赛罗的师父。",tags:["雷欧飞踢", "格斗大师", "L77星"]},
+  {name:"阿斯特拉",year:1974,era:"showa",img:"img/ultra_09.webp",desc:"雷欧的双胞胎弟弟。左腿有岩浆锁链印记，与哥哥并肩作战，兄弟合体技威力惊人。",tags:["岩浆锁链", "双胞胎", "兄弟合体技"]},
+  {name:"奥特之王",year:1974,era:"showa",img:"img/ultra_10.webp",desc:"传说中的超人，独自居住于国王星。拥有修复宇宙的伟力，在关键时刻现身。",tags:["国王星", "宇宙修复", "传说级"]},
+  {name:"乔尼亚斯",year:1979,era:"showa",img:"img/ultra_11.webp",desc:"U40星最强战士，首位动画奥特曼。体型健硕，普兰尼姆光线贯穿力极强。",tags:["U40星", "动画版", "普兰尼姆光线"]},
+  {name:"爱迪",year:1980,era:"showa",img:"img/ultra_12.webp",desc:"全能型战士，兼任中学教师。拥有丰富光线技与医疗能力，与尤莉安青梅竹马。",tags:["全能型", "教师", "医疗光线"]},
+  {name:"尤莉安",year:1980,era:"showa",img:"img/ultra_13.webp",desc:"光之国公主，首位女奥特战士。与爱迪并肩作战，温柔而勇敢。",tags:["光之国公主", "女战士", "爱迪"]},
+  {name:"葛雷",year:1990,era:"heisei",img:"img/ultra_14.webp",desc:"澳大利亚版奥特曼，名字源自大堡礁。三角计时器独特设计，等离子燃烧光线威力强大。",tags:["澳大利亚", "三角计时器", "等离子燃烧"]},
+  {name:"帕瓦特",year:1993,era:"heisei",img:"img/ultra_15.webp",desc:"美版奥特曼，肌肉线条分明。愤怒时眼睛由蓝变红，美籍亚裔人间体。",tags:["美版", "肌肉强化", "蓝色眼眸"]},
+  {name:"哉阿斯",year:1996,era:"heisei",img:"img/ultra_16.webp",desc:"洁癖奥特曼，用牙刷变身。红色形态战斗力惊人，从怯战到勇敢成长的独特故事。",tags:["洁癖", "牙刷变身", "红色强化"]},
+  {name:"迪迦",year:1996,era:"heisei",img:"img/ultra_17.webp",desc:"平成三杰之首，超古代战士。三形态切换（复合/强力/空中），在中国人气极高。",tags:["三形态", "超古代", "哉佩利敖光线", "平成三杰"]},
+  {name:"戴拿",year:1997,era:"heisei",img:"img/ultra_18.webp",desc:"平成三杰之一，闪亮/强力/奇迹三形态。飞鸟信变身，继承了迪迦的光。",tags:["三形态", "飞鸟信", "平成三杰"]},
+  {name:"盖亚",year:1998,era:"heisei",img:"img/ultra_19.webp",desc:"大地之光，平成三杰之一。高山我梦变身，V2/SV多重升级形态。",tags:["大地之光", "V2形态", "平成三杰"]},
+  {name:"阿古茹",year:1998,era:"heisei",img:"img/ultra_20.webp",desc:"海洋之光，全身蓝色。藤宫博也变身，冷酷而理性，盖亚的宿敌与战友。",tags:["海洋之光", "蓝色战士", "V2形态"]},
+  {name:"纳伊斯",year:2000,era:"heisei",img:"img/ultra_21.webp",desc:"搞笑短片主角，红色计时器为独特方形。以巧克力变身，轻松幽默风格。",tags:["短片", "方形计时器", "搞笑"]},
+  {name:"奈欧斯",year:2000,era:"heisei",img:"img/ultra_22.webp",desc:"年轻勇敢的警备队员，被称为'奇迹之人'。回归昭和风格的平成战士。",tags:["年轻勇者", "复古风格", "奇迹之人"]},
+  {name:"赛文21",year:2000,era:"heisei",img:"img/ultra_23.webp",desc:"21世纪的赛文，奈欧斯的搭档。同样使用头镖，隶属宇宙保安厅。",tags:["头镖", "宇宙保安厅", "奈欧斯搭档"]},
+  {name:"高斯",year:2001,era:"heisei",img:"img/ultra_24.webp",desc:"慈爱的战士，主张感化而非消灭怪兽。月神/日冕多种形态，最终与卡欧斯和解。",tags:["感化", "月神形态", "日冕形态", "慈爱"]},
+  {name:"杰斯提斯",year:2002,era:"heisei",img:"img/ultra_25.webp",desc:"正义的使者，与高斯融合为雷杰多。坚信人类值得被拯救。",tags:["正义", "融合素材", "雷杰多"]},
+  {name:"雷杰多",year:2003,era:"heisei",img:"img/ultra_26.webp",desc:"传说中的战士，高斯与杰斯提斯融合而成。火花传说一击毁灭一切邪恶，宇宙意志化身。",tags:["合体奥", "火花传说", "宇宙意志"]},
+  {name:"奈克斯特",year:2004,era:"heisei",img:"img/ultra_27.webp",desc:"奈克瑟斯的前身，与真木舜一融合。电影《ULTRAMAN》登场，进化链条的起点。",tags:["进化起点", "电影版", "诺亚前身"]},
+  {name:"奈克瑟斯",year:2004,era:"heisei",img:"img/ultra_28.webp",desc:"纽带之光，多名适能者继承。红色/蓝色青年形态，最终进化为诺亚。",tags:["适能者", "纽带", "青年形态", "诺亚"]},
+  {name:"诺亚",year:2004,era:"heisei",img:"img/ultra_29.webp",desc:"传说中的光之巨人，奈克瑟斯的最终形态。背生诺亚之翼，穿越时空的终极存在。",tags:["诺亚之翼", "终极形态", "传说级"]},
+  {name:"麦克斯",year:2005,era:"heisei",img:"img/ultra_30.webp",desc:"'最快最强'的奥特曼，马库修姆光线威力巨大。东马快斗变身，身高可巨大化至999米。",tags:["最快最强", "马库修姆光线", "巨大化"]},
+  {name:"杰诺",year:2005,era:"heisei",img:"img/ultra_31.webp",desc:"麦克斯的支援者，从光之国送来麦克斯银河。短暂登场却影响深远。",tags:["麦克斯银河", "支援者", "光之国"]},
+  {name:"梦比优斯",year:2006,era:"heisei",img:"img/ultra_32.webp",desc:"奥特兄弟最小成员，日比野未来。梦比姆光线+火焰形态，无限梦比优斯融合全兄弟。",tags:["奥特兄弟", "火焰形态", "无限梦比优斯"]},
+  {name:"希卡利",year:2006,era:"heisei",img:"img/ultra_33.webp",desc:"光之国科学家，发明骑士气息。从复仇中觉醒，与梦比优斯建立深厚羁绊。",tags:["科学家", "骑士气息", "蓝族"]},
+  {name:"赛罗",year:2009,era:"heisei",img:"img/ultra_34.webp",desc:"赛文之子，光之国最强战士！佩戴帕拉吉手镯穿越时空，赛罗双射线横扫一切。",tags:["赛文之子", "帕拉吉手镯", "光辉赛罗", "最强"]},
+  {name:"贝利亚",year:2009,era:"heisei",img:"img/ultra_35.webp",desc:"堕入黑暗的奥特战士。曾被雷布朗多星人附身，手持终极格斗仪，光之国最危险的反派。",tags:["黑暗", "雷布朗多", "终极格斗仪", "反派"]},
+  {name:"赛迦",year:2012,era:"heisei",img:"img/ultra_36.webp",desc:"赛罗+戴拿+高斯三位一体融合。传说中的奇迹战士，赛迦极限拳破灭一切。",tags:["三位一体", "奇迹", "赛迦极限拳"]},
+  {name:"银河",year:2013,era:"heisei",img:"img/ultra_37.webp",desc:"来自未来的光之巨人。礼堂光用银河火花变身，银河圣剑斩断黑暗。",tags:["未来战士", "银河火花", "银河圣剑"]},
+  {name:"维克特利",year:2014,era:"heisei",img:"img/ultra_38.webp",desc:"地底世界的守护者，维克特利水晶之力。使用怪兽武装的独特战斗方式。",tags:["地下世界", "维克特利水晶", "怪兽武装"]},
+  {name:"艾克斯",year:2015,era:"heisei",img:"img/ultra_39.webp",desc:"数据化的光之巨人。与大地融合，通过电子卡片切换多种怪兽装甲形态。",tags:["数据化", "电子卡片", "怪兽装甲"]},
+  {name:"欧布",year:2016,era:"heisei",img:"img/ultra_40.webp",desc:"流浪的奥特曼，使用奥特融合卡。红凯变身，重光/暴炎/疾风多种形态。",tags:["奥特融合卡", "流浪", "红凯", "多形态"]},
+  {name:"捷德",year:2017,era:"heisei",img:"img/ultra_41.webp",desc:"贝利亚之子，朝仓陆。用捷德升华器融合胶囊变身，证明命运可以超越血统。",tags:["贝利亚之子", "捷德升华器", "命运之子"]},
+  {name:"罗索",year:2018,era:"heisei",img:"img/ultra_42.webp",desc:"凑活海变身，使用火之水晶。与弟弟布鲁合体为罗布奥特曼。",tags:["火", "兄弟", "罗布合体", "水晶"]},
+  {name:"布鲁",year:2018,era:"heisei",img:"img/ultra_43.webp",desc:"凑勇海变身，使用水之水晶。与哥哥罗索并肩作战，兄弟羁绊的化身。",tags:["水", "兄弟", "罗布合体", "水晶"]},
+  {name:"格丽乔",year:2019,era:"reiwa",img:"img/ultra_44.webp",desc:"凑朝阳变身的女战士。治愈和辅助为主，拥有格罗布合体的关键力量。",tags:["女战士", "治愈", "格罗布", "妹妹"]},
+  {name:"泰迦",year:2019,era:"reiwa",img:"img/ultra_45.webp",desc:"泰罗之子，令和首位奥特曼。工藤优幸变身，泰迦三重斯特利姆展现惊人成长。",tags:["泰罗之子", "令和首作", "三重斯特利姆"]},
+  {name:"泰塔斯",year:2019,era:"reiwa",img:"img/ultra_46.webp",desc:"U40星肌肉战士，乔尼亚斯后辈。力量型战士，与泰迦、风马组成三人小队。",tags:["U40星", "肌肉", "三人小队", "力量"]},
+  {name:"风马",year:2019,era:"reiwa",img:"img/ultra_47.webp",desc:"O-50星忍者战士，以速度著称。三人小队敏捷担当，疾风般的战斗风格。",tags:["O-50星", "忍者", "速度", "三人小队"]},
+  {name:"令迦",year:2020,era:"reiwa",img:"img/ultra_48.webp",desc:"新生代英雄大合体！泰迦三人+格丽乔+银河+维克特利+艾克斯+欧布+捷德+罗索+布鲁。",tags:["大合体", "新生代顶点", "究极"]},
+  {name:"泽塔",year:2020,era:"reiwa",img:"img/ultra_49.webp",desc:"赛罗的徒弟，使用奥特勋章切换形态。获星云赏，阿尔法利刃/贝塔冲击/伽马未来三大形态。",tags:["赛罗徒弟", "奥特勋章", "星云赏", "三形态"]},
+  {name:"特利迦",year:2021,era:"reiwa",img:"img/ultra_50.webp",desc:"致敬迪迦的令和战士。复合/强力/空中三形态，真中剑悟变身，圆环之臂战斗。",tags:["迪迦致敬", "三形态", "圆环之臂", "微笑"]},
+  {name:"德凯",year:2022,era:"reiwa",img:"img/ultra_51.webp",desc:"明日见奏大变身。闪亮/强壮/奇迹三形态，塞尔捷特光线击破强敌。",tags:["三形态", "奏大", "塞尔捷特光线"]},
+  {name:"帝纳斯",year:2023,era:"reiwa",img:"img/ultra_52.webp",desc:"拉维星女战士，与德凯相似的光之巨人。紫色纹路，第七位女奥特英雄。",tags:["女战士", "拉维星", "紫色", "第七位"]},
+  {name:"雷古洛思",year:2022,era:"reiwa",img:"img/ultra_53.webp",desc:"天龙座D60星战士，宇宙幻兽拳大师。师从雷亭大师，白虎赤龙弹震撼登场。",tags:["幻兽拳", "天龙座", "D60", "白虎赤龙弹"]},
+  {name:"布莱泽",year:2023,era:"reiwa",img:"img/ultra_54.webp",desc:"比留间弦人变身，极具野性的战斗风格。螺旋光矛为标志武器，造型突破传统。",tags:["野性", "螺旋光矛", "比留间弦人", "创新"]},
+  {name:"亚刻",year:2024,era:"reiwa",img:"img/ultra_55.webp",desc:"飞世优马变身，释放想象力之力。亚刻最终升华光线，造型源自优马童年画作。",tags:["想象力", "亚刻觉醒器", "飞世优马", "2024"]},
+  {name:"奥美迦",year:2025,era:"reiwa",img:"img/ultra_56.webp",desc:"大木田宙人变身。奥美迦头镖为变身器与武器，标志性'奥美迦感知'动作，雷迪库琉特光线。",tags:["头镖", "奥美迦星石", "雷迪库琉特光线", "2025"]}
 ];
 
 const eraNames = {showa:'昭和时代',heisei:'平成时代',reiwa:'令和时代'};
@@ -481,26 +481,7 @@ document.querySelectorAll('.era-tab').forEach(t=>{
 render();
 </script>
 
-<div id="debug-panel" style="position:fixed;top:0;left:0;right:0;background:rgba(255,0,0,0.95);color:#fff;font-size:11px;padding:4px 10px;z-index:9999;display:none;max-height:160px;overflow-y:auto;font-family:monospace;"></div>
-<script>
-(function(){
-  var dbg=document.getElementById('debug-panel'),fails=[];
-  var origRender=render;
-  render=function(){
-    origRender.apply(this,arguments);
-    setTimeout(function(){
-      document.querySelectorAll('.card-image img').forEach(function(img,i){
-        if(!img.complete){fails.push('LOADING:'+img.alt);}
-        else if(img.naturalWidth===0){fails.push('FAILED:'+img.alt+' '+img.src.substring(0,60));}
-      });
-      if(fails.length){
-        dbg.style.display='block';
-        dbg.innerHTML='Images with issues ('+fails.length+'):<br>'+fails.join('<br>');
-      }
-    },5000);
-  };
-})();
-</script>
+
 
 </body>
 </html>
