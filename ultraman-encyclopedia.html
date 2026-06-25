@@ -340,22 +340,40 @@ main{
   <h1>奥特曼<span class="accent">全系列图鉴</span></h1>
   <p class="subtitle">从1966年初代到2025年奥美迦，跨越半个多世纪的光之巨人传奇。点击卡片查看高清大图。</p>
   <div class="blessing" style="margin:20px auto 0;max-width:600px;padding:14px 20px;background:linear-gradient(135deg,rgba(224,49,49,0.1),rgba(224,49,49,0.05));border:1px solid rgba(224,49,49,0.2);border-radius:8px;text-align:center;position:relative;overflow:hidden;">
-  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;filter:url(#glow);" viewBox="0 0 600 80" preserveAspectRatio="none">
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;" viewBox="0 0 600 80" preserveAspectRatio="none">
     <defs>
-      <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1"/>
-        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur2"/>
-        <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur3"/>
+      <filter id="tailGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+      </filter>
+      <filter id="midGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+      </filter>
+      <filter id="headGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
         <feMerge>
-          <feMergeNode in="blur3"/>
-          <feMergeNode in="blur2"/>
-          <feMergeNode in="blur1"/>
           <feMergeNode in="SourceGraphic"/>
         </feMerge>
       </filter>
     </defs>
-    <rect x="2" y="2" width="596" height="76" rx="7" ry="7" fill="none" stroke="#e03131" stroke-width="4"
-      stroke-dasharray="200 730" stroke-linecap="round">
+    <!-- Tail: long, thin, faint -->
+    <rect x="2" y="2" width="596" height="76" rx="7" ry="7" fill="none" stroke="#e03131" stroke-width="2"
+      stroke-dasharray="180 750" stroke-linecap="round" opacity="0.3" filter="url(#tailGlow)">
+      <animate attributeName="stroke-dashoffset" from="0" to="-930" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Mid: medium, brighter -->
+    <rect x="2" y="2" width="596" height="76" rx="7" ry="7" fill="none" stroke="#ff4444" stroke-width="3"
+      stroke-dasharray="120 810" stroke-linecap="round" opacity="0.6" filter="url(#midGlow)">
+      <animate attributeName="stroke-dashoffset" from="0" to="-930" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Head: short, thick, bright -->
+    <rect x="2" y="2" width="596" height="76" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="4"
+      stroke-dasharray="30 900" stroke-linecap="round" opacity="0.95">
+      <animate attributeName="stroke-dashoffset" from="0" to="-930" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Core: brightest point -->
+    <rect x="2" y="2" width="596" height="76" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2"
+      stroke-dasharray="8 922" stroke-linecap="round">
       <animate attributeName="stroke-dashoffset" from="0" to="-930" dur="2.5s" repeatCount="indefinite"/>
     </rect>
   </svg>
