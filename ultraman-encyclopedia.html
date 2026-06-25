@@ -314,6 +314,29 @@ main{
   .card-tags{display:none;}
   .card-year{font-size:10px;margin-bottom:0;}
 }
+
+/* Blessing animation */
+@keyframes blessingPulse {
+  0%,100% { box-shadow:0 0 8px rgba(224,49,49,0.15),0 0 20px rgba(224,49,49,0.05); }
+  50% { box-shadow:0 0 18px rgba(224,49,49,0.35),0 0 40px rgba(224,49,49,0.12); }
+}
+@keyframes blessingShimmer {
+  0% { background-position:-200% center; }
+  100% { background-position:200% center; }
+}
+.blessing {
+  animation: blessingPulse 2s ease-in-out infinite;
+}
+.blessing p {
+  background:linear-gradient(90deg,var(--ultra-red),#f87171,var(--ultra-red),#fca5a5,var(--ultra-red));
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation: blessingShimmer 2.5s linear infinite;
+  font-weight:900 !important;
+}
+
 </style>
 </head>
 <body>
