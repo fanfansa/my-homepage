@@ -480,5 +480,27 @@ document.querySelectorAll('.era-tab').forEach(t=>{
 
 render();
 </script>
+
+<div id="debug-panel" style="position:fixed;top:0;left:0;right:0;background:rgba(255,0,0,0.95);color:#fff;font-size:11px;padding:4px 10px;z-index:9999;display:none;max-height:160px;overflow-y:auto;font-family:monospace;"></div>
+<script>
+(function(){
+  var dbg=document.getElementById('debug-panel'),fails=[];
+  var origRender=render;
+  render=function(){
+    origRender.apply(this,arguments);
+    setTimeout(function(){
+      document.querySelectorAll('.card-image img').forEach(function(img,i){
+        if(!img.complete){fails.push('LOADING:'+img.alt);}
+        else if(img.naturalWidth===0){fails.push('FAILED:'+img.alt+' '+img.src.substring(0,60));}
+      });
+      if(fails.length){
+        dbg.style.display='block';
+        dbg.innerHTML='Images with issues ('+fails.length+'):<br>'+fails.join('<br>');
+      }
+    },5000);
+  };
+})();
+</script>
+
 </body>
 </html>
