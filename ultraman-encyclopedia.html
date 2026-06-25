@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>奥特曼全系列图鉴 · Ultraman Universe</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -441,7 +442,7 @@ function render(era='all',search=''){
     const cards = items.map(u=>`
       <div class="card" data-era="${u.era}">
         <div class="card-image">
-          <img src="${u.img}" alt="${u.name}" loading="lazy" onerror="this.parentElement.innerHTML='<span style=color:var(--text-muted);font-size:32px>&#x2728;</span>'">
+          <img src="${u.img}" alt="${u.name}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" onerror="this.parentElement.innerHTML='<span style=color:var(--text-muted);font-size:32px>&#x2728;</span>'">
           <span class="card-era-tag ${u.era}">${e}</span>
         </div>
         <div class="card-body">
